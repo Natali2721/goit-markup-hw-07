@@ -54,36 +54,43 @@ html {
     /* outline: 2px solid #2196f3;*/
 }
 
-.btn, .hero-btn, .modal-btn-close, button {
+button {
     cursor: pointer;
 }
 
 .header {
     border-bottom: 1px solid var(--header-border-color);
 }
-
-.main-nav,
-.nav-page,
-.nav  {
+.container__header {
     display: flex;
 }
-
-.link-logo {
+.nav {
+    display: flex;
+}
+.logo {
     color: var(--logo-text-color);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19; 
+    line-height: 1.19;   
+}
+.logo--accent {
+    color: var(--accent-color);
+}
+.header__logo {
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
 }
-
-.logo {
-    color: var(--accent-color);
+.footer__logo {
+    color: var(--primary-white-color);
+    display: inline-block;
+    margin-bottom: 20px;
 }
-    
-.link-nav {
+.nav__list {
+    display: flex;
+}
+.nav__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -96,20 +103,20 @@ html {
     transition: color 250ms var(--timing-function);
 }
 
-.nav-page .item:not(:last-child) {
+.nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.link-nav:hover,
-.link-nav:focus,
-.link-nav.current {
+.nav__link:hover,
+.nav__link:focus,
+.nav__link--current {
     color: var(--accent-color);
 }
 
-.link-nav.current {
+.nav__link--current {
     position: relative;
 }
-.link-nav.current::after {
+.nav__link--current::after {
     content: " ";
     display: inline-block;
     position: absolute;
@@ -122,14 +129,13 @@ html {
 }
 
 
-.contact-header {
+.contacts {
    display: flex;
    margin-left: auto;
    align-items: center;
 }
 
-.link.tel,
-.link.mail {
+.contacts__link {
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -144,19 +150,19 @@ html {
     transition: color 250ms var(--timing-function);
 }
 
-.contact-header .item + .item {
+.contacts__item + .contacts__item {
     margin-left: 50px;
 }
 
- .contact-icon {
+ .contacts__icon {
     margin-right: 10px;
     fill: currentColor;
 
     transition: fill var(--duration) var(--timing-function);
  }
 
-.contact:hover,
-.contact:focus {
+.contacts__link:hover,
+.contacts__link:focus {
     color: var(--accent-color);
 }
 
@@ -471,16 +477,7 @@ html {
 .footer-left {
     margin-right: 70px;
 }
-.logo-footer {
-    color: var(--primary-white-color);
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-     /* identical to box height */
-    display: inline-block;
-    margin-bottom: 20px;
-}
+
 .link-address {
     font-style: normal;
     color: var(--primary-white-color);
