@@ -185,7 +185,7 @@ button {
     background-position: center; 
 }
 
-.hero-title {
+.hero__title {
     margin: 0 auto 30px;
     
     width: 696px;
@@ -197,7 +197,7 @@ button {
     text-transform: uppercase;
 }
 
-.hero-btn {
+.hero__btn {
     display: inline-block;
     border-radius: 4px;
     padding: 10px 32px;
@@ -215,12 +215,12 @@ button {
     transition: background-color var(--duration) var(--timing-function);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
     background-color: var(--hero-btn-hf-color);
 }
 
-.visually-hidden {
+.title--hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -234,16 +234,15 @@ button {
     overflow: hidden;
 }
 
-.list-section,
-.service-list {
+.features-list {
     display: flex;
 }
 
-.list-section-item {
+.features-list__item {
     width: 270px;
 }
 
-.list-section-item:not(:last-child) {
+.features-list__item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -269,7 +268,7 @@ button {
 .astronaut::before {
     background-image: url(../images/icons.svg/astronaut.svg);
 }*/
-.section-picture {
+.features-list__picture {
     height: 120px;
     background-color: var(--third-background-color);
     display: flex;
@@ -277,7 +276,9 @@ button {
     align-items: center;
 }
 
-.section-title {
+
+
+.features-list__title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -287,31 +288,35 @@ button {
     margin-top: 30px;
 }
 
-.text {
+.features-list__text {
     font-size: 14px;
     line-height: 1.71;
 }
-
-.service-title {
+.service__section {
+    padding-top: 0;
+}
+.title {
     color:var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+}
+
+.service__title {
     margin-bottom: 50px;
 }
-.service {
-    padding-top: 0;
+.service__list {
+    display: flex;
 }
-.service-item:not(:last-child) {
+.service__item:not(:last-child) {
     margin-right: 30px;
 }
-.service-item {
+.service__item {
     position: relative;
     flex-basis: calc((100% - 60px)/3);
 }
-
-.service-txt {
+.service__overlay-txt {
     position: absolute;
     bottom: 0;
     height: 70px;
@@ -327,43 +332,34 @@ button {
     color: var(--primary-white-color);
 }
 
-.team {
+.team__section {
     background-color: var(--third-background-color);
 }
-.team-photo-txt {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.team-title {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    
+.team__title {
     margin-bottom: 50px;
 }
-.team-list {
+.team__list {
     display: flex;   
 }
-
-.team-foto {
+.team__item {
     background-color: var(--primary-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     transform: scale(1);
     transition: transform var(--duration) var(--timing-function);
-
 }
-
-.team-foto:hover {
+.team__item:hover {
     transform: scale(1.1);
 }
-.team-foto:not(:last-child){
+.team__item:not(:last-child){
     margin-right: 30px;
 }
-.foto-title {
+
+.team-member__info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.team-member__name {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -372,18 +368,18 @@ button {
     text-align: center;
     margin-bottom: 10px;
 }
-.team-text {
+.team-member__position {
     font-size: 16px;
     line-height: 1.18;
      /* identical to box height */
     text-align: center;
     margin-bottom: 16px;
 }
-.team-contact {
+.socials__list {
     display: flex;
     justify-content: center;
 }
-.team-contact-item {
+.socials__item {
     width: 44px;
     height: 44px;
     
@@ -393,10 +389,10 @@ button {
     justify-content: center;
     align-items: center;
 }
-.team-contact-item:last-child {
+.socials__item:last-child {
     margin-right: 0;
 }
-.link.social-team {
+.socials__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -406,16 +402,16 @@ button {
     
     transition: background-color var(--duration) var(--timing-function);
 }
-.link.social-team:hover,
-.link.link.social-team:focus {
+.socials__link:hover,
+.socials__link:focus {
     background-color: var(--accent-color);
 }
-.icon-social {
+.socials__icon {
     fill: var(--main-icon-fill-color);
     transition: fill var(--duration) var(--timing-function);
 }
-.link.social-team:hover .icon-social ,
-.link.link.social-team:focus .icon-social{
+.socials__link:hover .socials__icon ,
+.socials__link:focus .socials__icon{
     fill: var(--primary-white-color);
 }
 
