@@ -1,0 +1,119 @@
+
+$title-color: #212121;
+$primary-text-color: #757575;
+$accent-color: #2196f3;
+$primary-bgc: #ffffff;
+$second-bgc: #2F303A;
+$primary-white-color: #ffffff;
+$third-bgc: #f5f4fa;
+$logo-text-color: #000000;
+$btn-hf-color: #188CE8;
+$poster-border-color: #EEEEEE;
+$header-border-color: #ECECEC;
+$main-icon-fill: #AFB1B8;
+$input-border-color: rgba(33, 33, 33, 0.2);
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$duration: 250ms;
+$font-family: 'Roboto', sans-serif;
+$logo-font: 'Raleway', sans-serif;
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: $primary-text-color;
+    background-color: $primary-bgc;
+    font-family: $font-family;
+    letter-spacing: 0.03em;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    /* outline: 2px solid #2196f3;*/
+}
+.logo {
+    color: $logo-text-color;
+    font-family: $logo-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;   
+}
+.logo--accent {
+    color: $accent-color;
+}
+.header__logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.footer__logo {
+    color: $primary-white-color;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.header {
+    border-bottom: 1px solid $header-border-color;
+}
+.container__header {
+    display: flex;
+}
+.nav {
+    display: flex;
+}
+.nav__list {
+    display: flex;
+}
+.nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+.nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $title-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color $duration $timing-function;
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.nav__link--current {
+    color: $accent-color;
+}
+
+.nav__link--current {
+    position: relative;
+}
+.nav__link--current::after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;;
+    height: 4px;
+    width: 100%;
+    background-color: $accent-color;
+    border-radius: 2px;
+}
