@@ -50,7 +50,7 @@ html {
 .header {
     border-bottom: 1px solid var(--header-border-color);
 }
-.container__header {
+.header__container {
     display: flex;
 }
 .nav {
@@ -66,12 +66,12 @@ html {
 .logo--accent {
     color: var(--accent-color);
 }
-.header__logo {
+.logo__header {
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
 }
-.footer__logo {
+.logo__footer {
     color: var(--primary-white-color);
     display: inline-block;
     margin-bottom: 20px;
