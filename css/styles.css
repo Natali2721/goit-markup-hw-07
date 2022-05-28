@@ -262,7 +262,7 @@ html {
     font-size: 14px;
     line-height: 1.71;
 }
-.service__section {
+.service {
     padding-top: 0;
 }
 .title {
@@ -300,7 +300,7 @@ html {
     text-transform: uppercase;
     color: var(--primary-white-color);
 }
-.team__section {
+.team {
     background-color: var(--third-background-color);
 }
 .team__title {
@@ -323,7 +323,7 @@ html {
     margin-right: 30px;
 }
 
-.team-member__info {
+.team-member {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -343,7 +343,7 @@ html {
     text-align: center;
     margin-bottom: 16px;
 }
-.socials__list {
+.socials {
     display: flex;
     justify-content: center;
 }
@@ -416,6 +416,7 @@ html {
 .clients__link:focus {
     color:  var(--accent-color);
 }
+
 .footer {
     background-color: var(--second-background-color);
     padding-top: 60px;
