@@ -454,7 +454,7 @@ html {
     color: var(--accent-color);
 }
     
-.social__text {
+.socials__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -463,19 +463,19 @@ html {
     display: block;
     margin-bottom: 20px;
 }
-.social-list {
+.socials-footer {
     display: flex;
 }
-.social-list__item {
+.socials__item {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
 }
-.social-list__item:last-child {
+.socials__item:last-child {
     margin-right: 0;
 }
-.social-list__link {
+.socials-footer__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -486,11 +486,11 @@ html {
 
     transition: background var(--duration) var(--timing-function);
 }
-.social-list__link:hover ,
-.social-list__link:focus {
+.socials-footer__link:hover ,
+.socials-footer__link:focus {
     background-color: var(--accent-color);
 }
-.social-list__icon {
+.socials-footer__icon {
     fill: var(--primary-white-color);
 }
 
