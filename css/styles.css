@@ -730,7 +730,12 @@ html {
 }
 .agree-wrap__icon--unchecked {
     margin-right: 7px;
+    transition: fill var(--duration) var(--timing-function), display var(--duration) var(--timing-function);
 }
+.checkbox:focus + .agree-wrap__icon--unchecked {
+    fill: #188CE8; 
+}
+
 .checkbox:checked + .agree-wrap__icon--unchecked {
     display: none;
 }
