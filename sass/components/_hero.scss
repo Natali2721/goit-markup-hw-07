@@ -23,6 +23,7 @@
 }
 
 .hero__btn {
+    @extend .btn;
     padding: 10px 32px;
     transition: background-color $duration $timing-function;
     &:hover,

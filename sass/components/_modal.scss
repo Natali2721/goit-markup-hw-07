@@ -81,13 +81,13 @@
     cursor: pointer;
     transition: border-color $duration $timing-function, box-shadow $duration $timing-function;
 }
-.contact-form__input-area {
+.contact-form__input-box {
     position: relative;
 }
 
 .contact-form__icon {
     position: absolute;
-    top: 14px;
+    top: 12px;
     left: 15px;
     fill: $title-color;
     transition: fill $duration $timing-function;
@@ -134,20 +134,12 @@
     }
     &__link {
         color: $accent-color;
+        text-decoration: underline;
     }
 }
 
 .agree-wrap__checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    @extend .visualy-hidden;
 }
 
 .agree-wrap__icon--unchecked {
@@ -174,6 +166,7 @@
 }
 
 .contact-form__btn-submit {
+    @extend .btn;
     padding: 10px 55px 10px 55px;
     display: block; 
     margin: 0 auto;

@@ -32,10 +32,10 @@ h1, h2, h3, p {
 html {
     scroll-behavior: smooth;
 }
-.link {
+a {
     text-decoration: none;
 }
-.list {
+ul, ol {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -63,7 +63,7 @@ html {
     font-size: 26px;
     line-height: 1.19;   
 }
-.logo--accent {
+.logo__accent {
     color: var(--accent-color);
 }
 .logo__header {
@@ -198,7 +198,7 @@ html {
 .hero__btn:focus {
     background-color: var(--hero-btn-hf-color);
 }
-.title--hidden {
+.section__title--hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -242,7 +242,7 @@ html {
 .astronaut::before {
     background-image: url(../images/icons.svg/astronaut.svg);
 }*/
-.features-list__picture {
+.features-list__box {
     height: 120px;
     background-color: var(--third-background-color);
     display: flex;
@@ -262,30 +262,28 @@ html {
     font-size: 14px;
     line-height: 1.71;
 }
-.service {
+.section--no-padding {
     padding-top: 0;
 }
-.title {
+.section__title {
     color:var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-}
-.service__title {
     margin-bottom: 50px;
 }
-.service__list {
+.services {
     display: flex;
 }
-.service__item:not(:last-child) {
+.services__item:not(:last-child) {
     margin-right: 30px;
 }
-.service__item {
+.services__item {
     position: relative;
     flex-basis: calc((100% - 60px)/3);
 }
-.service__overlay-txt {
+.services__overlay-txt {
     position: absolute;
     bottom: 0;
     height: 70px;
@@ -300,13 +298,11 @@ html {
     text-transform: uppercase;
     color: var(--primary-white-color);
 }
-.team {
+.section--other-bgc {
     background-color: var(--third-background-color);
 }
-.team__title {
-    margin-bottom: 50px;
-}
-.team__list {
+
+.team {
     display: flex;   
 }
 .team__item {
@@ -323,11 +319,11 @@ html {
     margin-right: 30px;
 }
 
-.team-member {
+.team__box {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.team-member__name {
+.team__title {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -336,7 +332,7 @@ html {
     text-align: center;
     margin-bottom: 10px;
 }
-.team-member__position {
+.team__txt {
     font-size: 16px;
     line-height: 1.18;
      /* identical to box height */
@@ -382,10 +378,8 @@ html {
 .socials__link:focus .socials__icon{
     fill: var(--primary-white-color);
 }
-.clients__title {
-    margin-bottom: 50px;
-}
-.clients__list {
+
+.clients {
     display: flex;   
 }
 .clients__item {
@@ -665,7 +659,7 @@ html {
     cursor: pointer;
     transition: border-color var(--duration) var(--timing-function), box-shadow var(--duration) var(--timing-function);
 }
-.contact-form__input-area {
+.contact-form__input-box {
     position: relative;
 }
 .contact-form__icon {

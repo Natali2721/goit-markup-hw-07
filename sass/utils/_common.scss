@@ -16,10 +16,10 @@ img {
 h1, h2, h3, p {
     margin: 0;
 }
-.link {
+a {
     text-decoration: none;
 }
-.list {
+ul, ol {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -35,6 +35,36 @@ h1, h2, h3, p {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.section--no-padding {
+    padding-top: 0; 
+}
+.section--other-bgc {
+    background-color: $third-bgc;
+}
+
+.section__title {
+    color: $title-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.visualy-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.section__title--hidden {
+    @extend .visualy-hidden;
+}
 .btn {
     border-radius: 4px;
     font-family: inherit;
@@ -49,24 +79,4 @@ h1, h2, h3, p {
     display: inline-block; 
     text-align: center;
     cursor: pointer;
-}
-.title {
-    color: $title-color;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-}
-
-.title--hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
 }

@@ -7,6 +7,7 @@
     margin-right: 8px;
 }
 .filter__btn {
+    @extend .btn;
     padding: 6px 22px;
     box-shadow: none;
     background-color: $third-bgc;
